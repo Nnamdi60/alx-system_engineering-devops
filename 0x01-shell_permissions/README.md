@@ -1,1 +1,1 @@
-Create a script that creates a directory
+Write a script that changes the group
