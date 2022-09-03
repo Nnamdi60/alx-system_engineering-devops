@@ -1,2 +1,3 @@
 #!/bin/bash
-0 my SCHOOL school information
+0 string SCHOOL school data
+!:mime Schol
