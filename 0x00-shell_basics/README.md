@@ -1,1 +1,1 @@
-Create a script that creates the directories
+ife is a series of commas not periods
