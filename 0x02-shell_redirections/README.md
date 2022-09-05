@@ -1,1 +1,1 @@
-Write a script that writes into the file 
+Write a script that deletes all the regular files
