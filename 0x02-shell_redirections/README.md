@@ -1,1 +1,1 @@
-Write a script that lists all the files with extension in current directory
+An acrostic is a poem
