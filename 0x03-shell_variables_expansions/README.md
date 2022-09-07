@@ -1,1 +1,1 @@
-Write a script that prints the result of power divided by divide
+Write a script that displays the result to life and death
