@@ -1,1 +1,1 @@
-Lets not ask where beautiful life leads
+Create a script that lists environment variables
