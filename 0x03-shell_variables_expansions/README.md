@@ -1,1 +1,1 @@
-The parth to success is to take massive determined action
+Path to succeed
