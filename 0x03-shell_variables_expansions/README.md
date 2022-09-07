@@ -1,1 +1,1 @@
-Path to succeed
+Lets not ask where beautiful life leads
