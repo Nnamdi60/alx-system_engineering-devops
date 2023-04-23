@@ -41,11 +41,11 @@ frontend chris-domain-frontend
         default_backend chris-domain-backend
 
 frontend chris-domain-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/chris=domain.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/chris-domain.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend chris-domain-backend
 
-backend clickviral-backend
+backend chris-domain-backend
         balance roundrobin
         server 151902-web-01 54.209.99.124:80 check
         server 151902-web-02 18.215.160.108:80 check
