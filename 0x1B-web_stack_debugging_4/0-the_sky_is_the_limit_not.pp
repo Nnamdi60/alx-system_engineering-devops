@@ -1,12 +1,12 @@
-# fix limit file at hbton user.
+# Fix problem of high amount of requests
 
-exec { 'fix_limit_hbton_user':
-  command => 'sed -i "/holberton hard/s/5/10000/" /etc/security/limits.conf',
-  path    => '/usr/local/bin/:/bin/'
+exec {'replace':
+  provider => shell,
+  command  => 'sudo sed -i "s/ULIMIT=\"-n 15\"/ULIMIT=\"-n 4096\"/" /etc/default/nginx',
+  before   => Exec['restart'],
 }
 
-# Increase soft file limit hbton ser.
-exec { 'increase_soft_file':
-  command => 'sed -i "/holberton soft/s/4/20000/" /etc/security/limits.conf',
-  path    => '/usr/local/bin/:/bin/'
+exec {'restart':
+  provider => shell,
+  command  => 'sudo service nginx restart',
 }
